@@ -1,6 +1,6 @@
 import { SearchAnalyticsDashboard } from "./components/dashboard";
 // import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-// 
+//
 // const client = new ApolloClient({
 //   uri: 'https://api.example.com/graphql',
 //   cache: new InMemoryCache(),
@@ -19,7 +19,12 @@ import { SearchAnalyticsDashboard } from "./components/dashboard";
 // }
 
 function App() {
-  return <div><SearchAnalyticsDashboard /></div>;
+  return (
+    <div>
+      <header><title>Search Analytics Dashboard</title></header>
+      <SearchAnalyticsDashboard />
+    </div>
+  );
 }
 
 export default App;
