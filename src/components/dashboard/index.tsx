@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { SearchQuery } from "../../types";
 import { useSearchAnalytics } from "../../hooks/useSearchAnalytics";
-import { DateRangePicker } from "./DateRandPicker/DateRangePicker";
+import { DateRangePicker } from "./DateRangePicker/DateRangePicker";
 import { MetricCards } from "./MetricCards/MetricCards";
 import { SearchFilter } from "./SearchFilter/SearchFilter";
 import { SortableTable } from "./SortableTable/SortableTable";
