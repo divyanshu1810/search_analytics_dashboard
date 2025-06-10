@@ -1,5 +1,5 @@
 import { Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import "./OverviewCharts.css";
+import "./OverViewCharts.css";
 import { SearchQuery } from "../../../../types";
 
 export const OverviewCharts: React.FC<{ data: SearchQuery[] }> = ({ data }) => {
