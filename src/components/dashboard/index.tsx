@@ -8,6 +8,7 @@ import { SortableTable } from "./SortableTable/SortableTable";
 import { DetailChart } from "./charts/DetailChart/DetailChart";
 import { Activity, BarChart3, Filter, TrendingUp } from "lucide-react";
 import "./index.css";
+import { OverviewCharts } from "./charts/OverViewCharts/OverViewCharts";
 
 export const SearchAnalyticsDashboard: React.FC = () => {
   const [startDate, setStartDate] = useState(() => {
@@ -109,7 +110,9 @@ export const SearchAnalyticsDashboard: React.FC = () => {
 
         {data && (
           <div className="content-section">
-            
+            {activeTab === 'overview' && (
+              <OverviewCharts data={data.topQueries} />
+            )}
 
             {activeTab === 'table' && (
               <>
