@@ -1,0 +1,100 @@
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .metrics-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.metric-card {
+  background-color: #111827;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #1F2937;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.metric-card:hover {
+  border-color: #374151;
+}
+
+.metric-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metric-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-title {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #9CA3AF;
+  margin: 0;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.metric-icon-container {
+  padding: 0.75rem;
+  border-radius: 50%;
+}
+
+.metric-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Color variants */
+.metric-icon-container.blue {
+  background-color: rgba(30, 58, 138, 0.3);
+}
+
+.metric-icon-container.blue .metric-icon {
+  color: #60A5FA;
+}
+
+.metric-icon-container.emerald {
+  background-color: rgba(6, 78, 59, 0.3);
+}
+
+.metric-icon-container.emerald .metric-icon {
+  color: #34D399;
+}
+
+.metric-icon-container.purple {
+  background-color: rgba(88, 28, 135, 0.3);
+}
+
+.metric-icon-container.purple .metric-icon {
+  color: #A855F7;
+}
+
+.metric-icon-container.orange {
+  background-color: rgba(154, 52, 18, 0.3);
+}
+
+.metric-icon-container.orange .metric-icon {
+  color: #FB923C;
+}
