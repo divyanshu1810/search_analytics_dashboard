@@ -4,6 +4,7 @@ A responsive React + TypeScript dashboard for visualizing search analytics data 
 
 ## 🎥 Demo Video
 
+https://github.com/user-attachments/assets/77684dd6-0c69-4d74-b939-722c8f455c86
 
 ## 🔗 Deployed Link
 
