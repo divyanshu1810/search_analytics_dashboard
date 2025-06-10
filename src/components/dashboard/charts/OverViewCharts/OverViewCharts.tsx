@@ -1,6 +1,6 @@
 import { Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import { SearchQuery } from "../../../types";
 import "./OverviewCharts.css";
+import { SearchQuery } from "../../../../types";
 
 export const OverviewCharts: React.FC<{ data: SearchQuery[] }> = ({ data }) => {
   const topQueries = data.slice(0, 8);

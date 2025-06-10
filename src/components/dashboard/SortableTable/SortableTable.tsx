@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SearchQuery, SortDirection, SortField } from "../../types";
+import { SearchQuery, SortDirection, SortField } from "../../../types";
 import "./SortableTable.css";
 
 export const SortableTable: React.FC<{

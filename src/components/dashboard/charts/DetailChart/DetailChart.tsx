@@ -1,5 +1,5 @@
 import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import { SearchQuery, TimeSeriesData } from "../../../types";
+import { SearchQuery, TimeSeriesData } from "../../../../types";
 import "./DetailChart.css";
 
 export const DetailChart: React.FC<{

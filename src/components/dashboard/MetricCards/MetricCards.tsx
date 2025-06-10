@@ -1,5 +1,5 @@
 import { BarChart3, Eye, MousePointer, TrendingUp } from "lucide-react";
-import { SearchQuery } from "../../types";
+import { SearchQuery } from "../../../types";
 import "./MetricCards.css";
 
 export const MetricCards: React.FC<{ data: SearchQuery[] }> = ({ data }) => {

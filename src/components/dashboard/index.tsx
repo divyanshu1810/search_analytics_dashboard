@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { SearchQuery } from "../../types";
 import { useSearchAnalytics } from "../../hooks/useSearchAnalytics";
-import { DateRangePicker } from "./DateRangePicker";
-import { MetricCards } from "./MetricCards";
-import { OverviewCharts } from "./charts/OverViewCharts";
-import { SearchFilter } from "./SearchFilter";
-import { SortableTable } from "./SortableTable";
-import { DetailChart } from "./charts/DetailChart";
+import { DateRangePicker } from "./DateRandPicker/DateRangePicker";
+import { MetricCards } from "./MetricCards/MetricCards";
+import { SearchFilter } from "./SearchFilter/SearchFilter";
+import { SortableTable } from "./SortableTable/SortableTable";
+import { DetailChart } from "./charts/DetailChart/DetailChart";
 import { Activity, BarChart3, Filter, TrendingUp } from "lucide-react";
 import "./index.css";
+import { OverviewCharts } from "./charts/OverViewCharts/OverViewCharts";
 
 export const SearchAnalyticsDashboard: React.FC = () => {
   const [startDate, setStartDate] = useState(() => {
