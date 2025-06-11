@@ -21,7 +21,6 @@ import { SearchAnalyticsDashboard } from "./components/dashboard";
 function App() {
   return (
     <div>
-      <header><title>Search Analytics Dashboard</title></header>
       <SearchAnalyticsDashboard />
     </div>
   );

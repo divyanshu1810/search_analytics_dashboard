@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { SearchAnalyticsData, SearchQuery, TimeSeriesData } from "../types";
 
 // GraphQL Integration (commented out - uncomment to use real API)
-// import { useQuery } from '@apollo/client'; // or 'urql' depending on your GraphQL client
+// import { useQuery } from '@apollo/client';
 // import { gql } from '@apollo/client';
 
 // GraphQL Query Definition
@@ -123,10 +123,6 @@ export const useSearchAnalytics = (startDate: string, endDate: string, queryFilt
         //   setLoading(graphqlLoading);
         //   return;
         // }
-
-        // Option 2: Using manual fetch
-        // const analyticsData = await fetchGraphQLData();
-        // setData(analyticsData);
 
         // Mock Implementation (remove when using real API)
         await new Promise(resolve => setTimeout(resolve, 1000));
